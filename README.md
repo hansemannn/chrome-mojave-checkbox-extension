@@ -2,6 +2,8 @@
 
 A tiny Google Chrome extension to fix the zoom-level on macOS 11.4 (Mojave) Beta.
 
+⏩ [Download in Chrome Web Store](https://chrome.google.com/webstore/detail/mojave-checkbox-fix/ihlgehdlkphgngjfagonbeoepadbdaae)
+
 ## Summary
 
 When using macOS 11.14 Mojave (Beta), Chrome does not render the checkboxes properly. 
