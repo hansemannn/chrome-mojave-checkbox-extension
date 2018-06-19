@@ -8,6 +8,11 @@ When using macOS 11.14 Mojave (Beta), Chrome does not render the checkboxes prop
 To workaround it, this plugin sets the zoom-level of each page to 1.0000001, which fixes 
 the issue until Chrome officially supports Mojave.
 
+## Known Issues
+
+- [ ] The workaround does not seem to be picked up by `<iframe>` tags so far. Feel free to submit
+a pull request for that!
+
 ## License
 
 MIT
