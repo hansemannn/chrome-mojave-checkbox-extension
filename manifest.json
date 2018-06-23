@@ -5,7 +5,8 @@
   "permissions": ["activeTab", "declarativeContent"],
   "content_scripts": [{
     "js": ["content.js"],
-    "matches": ["http://*/*", "https://*/*"]
+    "matches": ["http://*/*", "https://*/*"],
+    "all_frames": true
   }],
   "icons": {
     "16": "images/icon-16.png",
