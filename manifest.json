@@ -5,7 +5,7 @@
   "permissions": ["activeTab", "declarativeContent"],
   "content_scripts": [{
     "js": ["content.js"],
-    "matches": ["http://*/*", "https://*/*"],
+    "matches": ["<all_urls>"],
     "all_frames": true
   }],
   "icons": {
