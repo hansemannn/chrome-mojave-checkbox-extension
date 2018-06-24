@@ -12,8 +12,7 @@ the issue until Chrome officially supports Mojave.
 
 ## Known Issues
 
-- [ ] The workaround does not seem to be picked up by `<iframe>` tags so far. Feel free to submit
-a pull request for that!
+- [x] The workaround does not seem to be picked up by `<iframe>` tags so far.
 
 ## License
 
