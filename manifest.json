@@ -1,7 +1,7 @@
 {
   "name": "Mojave Checkbox-Fix",
-  "version": "1.0.0",
-  "description": "A tiny extension to fix the checkboxes appearance in macOS Mojave",
+  "version": "1.0.1",
+  "description": "A tiny extension to fix the checkbox appearances in macOS 11.14 Mojave.",
   "permissions": ["activeTab", "declarativeContent"],
   "content_scripts": [{
     "js": ["content.js"],
