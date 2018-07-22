@@ -11,11 +11,10 @@ var objectsToZoom = [document.body];
 var objectsToZoom = objectsToZoom.concat(Array.from(document.getElementsByTagName("iframe"))); // Get all the iframes
 
 for (var i=0; i<objectsToZoom.length; i++) {
-    // console.log(objectsToZoom[i]);
-    if (objectsToZoom[i].tagName == "IFRAME") {
-	objectsToZoom[i] = objectsToZoom[i].contentDocument.body; // get the body element of the iframe
-    }
     if (objectsToZoom[i] != null) {
+        if (objectsToZoom[i].tagName == "IFRAME") {
+	    objectsToZoom[i] = objectsToZoom[i].contentDocument.body; // get the body element of the iframe
+        }
         objectsToZoom[i].style.zoom = NEW_ZOOM;
     }
 }
