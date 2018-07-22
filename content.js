@@ -4,6 +4,18 @@
 
 // Guard the DOM for async rendering
 // See: https://github.com/hansemannn/chrome-mojave-checkbox-extension/issues/3
-if (document.body !== null) {
-    document.body.style.zoom = 1.0000001;
+
+var NEW_ZOOM = 1.0000001;
+
+var objectsToZoom = [document.body];
+var objectsToZoom = objectsToZoom.concat(Array.from(document.getElementsByTagName("iframe"))); // Get all the iframes
+
+for (var i=0; i<objectsToZoom.length; i++) {
+    // console.log(objectsToZoom[i]);
+    if (objectsToZoom[i].tagName == "IFRAME") {
+	objectsToZoom[i] = objectsToZoom[i].contentDocument.body; // get the body element of the iframe
+    }
+    if (objectsToZoom[i] != null) {
+        objectsToZoom[i].style.zoom = NEW_ZOOM;
+    }
 }
