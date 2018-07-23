@@ -2,8 +2,13 @@
 
 'use strict';
 
-// Guard the DOM for async rendering
-// See: https://github.com/hansemannn/chrome-mojave-checkbox-extension/issues/3
-if (document.body !== null) {
-    document.body.style.zoom = 1.0000001;
-}
+const NEW_ZOOM = 1.0000001;
+const elements = [document.body, ...Array.from(document.getElementsByTagName('iframe'))];
+
+elements.forEach(element => {
+    if (element === null) return;
+    if (element.tagName.toLowerCase() === 'iframe' && element.contentDocument !== null) {
+        element = element.contentDocument.body;
+    }
+    element.style.zoom = NEW_ZOOM;
+});
