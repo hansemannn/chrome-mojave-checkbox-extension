@@ -1,4 +1,4 @@
-# macOS 11.4 Beta Checkbox-Fix
+# macOS 10.4 Beta Checkbox-Fix
 
 A tiny Google Chrome extension to fix the zoom-level on macOS 11.4 (Mojave) Beta.
 
