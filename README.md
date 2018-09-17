@@ -1,5 +1,7 @@
 # macOS 10.14 Beta Checkbox-Fix
 
+> This macOS bug was fixed in macOS 10.14 Beta 11 and upwards. Thanks for using this extension!
+
 A tiny Google Chrome extension to fix the zoom-level on macOS 10.14 (Mojave) Beta.
 
 ⏩ [Download in Chrome Web Store](https://chrome.google.com/webstore/detail/mojave-checkbox-fix/ihlgehdlkphgngjfagonbeoepadbdaae)
